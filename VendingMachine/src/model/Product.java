@@ -1,7 +1,15 @@
-public class Product {
+package model;
+
+public abstract class Product {
     private double cost;
     private String name;
     private TypeProduct typeProduct;
+
+    public Product(double cost, String name) {
+        this.cost = cost;
+        this.name = name;
+
+    }
 
     public void setCost(double cost) {
         this.cost = cost;
@@ -11,9 +19,7 @@ public class Product {
         this.name = name;
     }
 
-    public void setTypeProduct(TypeProduct typeProduct) {
-        this.typeProduct = typeProduct;
-    }
+
 
     public double getCost() {
         return cost;
@@ -23,15 +29,12 @@ public class Product {
         return name;
     }
 
-    public TypeProduct getTypeProduct() {
-        return typeProduct;
-    }
+
 
     @Override
     public String toString() {
-        return String.format("%s %f %s",
+        return String.format("%s %f рублей",
                 name,
-                cost,
-                typeProduct);
+                cost);
     }
 }
