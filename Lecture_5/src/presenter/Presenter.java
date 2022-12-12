@@ -1,5 +1,6 @@
 package presenter;
 
+import model.CalcModel;
 import model.Model;
 import model.Oper;
 import model.ProdModel;
@@ -9,12 +10,12 @@ public class Presenter {
     View view;
     Model model;
 
-    public Presenter(ProdModel m, View v){
+    public Presenter(CalcModel m, View v){
         model = m;
         view = v;
     }
 
-    public void buttonClick(Oper oper) {
+    public void prodClick(Oper oper) {
         int a = view.getValue("a: ");
         int b = view.getValue("b: ");
         model.setX(a);
