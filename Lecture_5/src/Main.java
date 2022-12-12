@@ -1,8 +1,13 @@
+import model.Oper;
+import model.ProdModel;
+import presenter.Presenter;
+import view.View;
+
 public class Main  {
     public static void main(String[] args) {
 
 
-//        Presenter p = new Presenter(new SumModel(), new View());
+//        presenter.Presenter p = new presenter.Presenter(new model.SumModel(), new view.View());
 //
 //        p.buttonClick();
 

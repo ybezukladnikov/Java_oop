@@ -1,9 +1,10 @@
-public class SumModel extends CalcModel {
+package model;
 
+public class ProdModel extends CalcModel {
 
     @Override
     public int result() {
-        return x + y;
+        return x * y;
     }
 
     @Override

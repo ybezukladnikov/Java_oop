@@ -1,8 +1,13 @@
-public class ProdModel extends CalcModel {
+package model;
+
+import model.CalcModel;
+
+public class SumModel extends CalcModel {
+
 
     @Override
     public int result() {
-        return x * y;
+        return x + y;
     }
 
     @Override

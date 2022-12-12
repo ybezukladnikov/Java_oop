@@ -1,8 +1,15 @@
+package presenter;
+
+import model.Model;
+import model.Oper;
+import model.ProdModel;
+import view.View;
+
 public class Presenter {
     View view;
     Model model;
 
-    public Presenter(Model m, View v){
+    public Presenter(ProdModel m, View v){
         model = m;
         view = v;
     }

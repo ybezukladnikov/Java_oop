@@ -1,4 +1,7 @@
+package view;
+
 import java.util.Scanner;
+import model.Oper;
 
 public class View {
     Scanner in = new Scanner(System.in);
