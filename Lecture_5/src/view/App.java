@@ -10,16 +10,15 @@ import java.util.Scanner;
 public class App {
 
     public static void ButtonClick() {
-        System.out.println("What action do you want to take?");
-        System.out.print("\033[H\033[J");// ru.stackoverflow.com/questions/1315049/Как-очистить-консоль-в-java-во-время-действия-программы
-//        View view = new NewConsoleView();
-//        Presenter presenter = new Presenter(view, Config.pathDb);
-//        presenter.LoadFromFile();
-//
-        try (Scanner in = new Scanner(System.in)) {
 
-            while (true) {
-                System.out.println(" 1 - prod\n  2 - sum");
+        System.out.print("\033[H\033[J");
+
+        try (Scanner in = new Scanner(System.in)) {
+            boolean flag = true;
+            while (flag) {
+                System.out.println("What action do you want to take?");
+                System.out.println(" 1 - prod\n 2 - sum\n 3 - exit");
+                System.out.print("Enter menu item => ");
                 String key = in.next();
                 System.out.print("\033[H\033[J");
                 switch (key) {
@@ -32,10 +31,15 @@ public class App {
                         p2.prodClick(Oper.Sum);
                         break;
 
+                    case "3":
+                        flag = false;
+                        System.out.println("Good day!");
+
                     default:
-                        System.out.println("Такой команды нет");
+                        if (flag) System.out.println("There is no such command, please try again.");
                         break;
                 }
+
             }
         }
 
