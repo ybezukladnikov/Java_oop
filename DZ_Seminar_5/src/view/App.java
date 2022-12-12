@@ -17,7 +17,7 @@ public class App {
             boolean flag = true;
             while (flag) {
                 System.out.println("What action do you want to take?");
-                System.out.println(" 1 - prod\n 2 - sum\n 3 - exit");
+                System.out.println(" 1 - Multiplication\n 2 - Addition\n 3 - exit");
                 System.out.print("Enter menu item => ");
                 String key = in.next();
                 System.out.print("\033[H\033[J");

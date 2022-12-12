@@ -16,11 +16,11 @@ public class Presenter {
     }
 
     public void prodClick(Oper oper) {
-        int a = view.getValue("a: ");
-        int b = view.getValue("b: ");
+        double a = view.getValue("Enter the first number: ");
+        double b = view.getValue("Enter the second number: ");
         model.setX(a);
         model.setY(b);
-        int result = model.result();
+        double result = model.result();
         view.print(result, oper);
 
     }
