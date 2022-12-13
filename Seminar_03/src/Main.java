@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         TeachGroup teachGroup = new TeachGroup();
@@ -7,8 +9,11 @@ public class Main {
         teachGroup.addStudent("Max");
 
         for (Student el:teachGroup) {
-            
+            System.out.println(el);
+
         }
+
+
 
     }
 }
