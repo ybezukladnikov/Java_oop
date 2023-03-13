@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/Lecture_5_PhoneBook/Lecture_5_PhoneBook.iml" filepath="$PROJECT_DIR$/Lecture_5_PhoneBook/Lecture_5_PhoneBook.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seminar_03/Seminar_03.iml" filepath="$PROJECT_DIR$/Seminar_03/Seminar_03.iml" />
       <module fileurl="file://$PROJECT_DIR$/VendingMachine/VendingMachine.iml" filepath="$PROJECT_DIR$/VendingMachine/VendingMachine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithm/algorithm.iml" filepath="$PROJECT_DIR$/algorithm/algorithm.iml" />
     </modules>
   </component>
 </project>
