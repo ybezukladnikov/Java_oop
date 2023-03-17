@@ -8,6 +8,12 @@ public class HashTable <K, V> {
         baskets = (Basket[]) new Object[INIT_BASKET_COUNT];
     }
 
+    private int calculateBasketIndex(K key){
+        return key.hashCode() % INIT_BASKET_COUNT;
+    }
+
+
+
     private class Entity {
 
         private K key;
@@ -22,11 +28,24 @@ public class HashTable <K, V> {
         private class Basket{
 
             private Node head;
+
+            private
+
+
             private class Node{
                 private Entity data;
                 private Node next;
 
             }
+
+        }
+
+        public V getValue(K key){
+        int index = calculateBasketIndex(key);
+        while (baskets[index].head.next!= null){
+            return baskets[var]
+        }
+
 
         }
 
